@@ -1,0 +1,214 @@
+div.products-container{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    font-family: 'Gabarito', cursive;
+    height: 50vh;
+    position: relative;
+}
+
+div.products-container div.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+div.products-container div.left div.product-cards{
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 1rem;
+    min-width: 350px;
+    transform: scale(80%);
+    transition: all 0.6s linear;
+
+}
+
+div.products-container div.left div.product-cards.active{
+
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(110%);
+    z-index: 10;
+}
+
+div.products-container div.left div.product-cards p{
+    text-align: justify;
+    color: grey;
+    font-size: small;
+    margin-bottom: 15px;
+}
+div.products-container div.left div.product-cards img{
+    width: 15rem;
+    height: 10rem;
+}
+
+div.products-container div.left div.product-cards div{
+    padding: 5px;
+    margin-top: 10px;
+}
+a.btn-product{
+    text-decoration: none;
+    color:#fff;
+	text-align: center;
+	cursor: pointer;
+    background-color: #091216;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+    margin: 5px;
+}
+
+
+a.btn-product:hover{
+	background:#fff;
+	box-shadow:0px 2px 10px 5px #97B1BF;
+	color:#000;
+}
+
+a.btn-product:active{
+    transform: scale(10%);
+}
+
+
+div.products-container div.right{
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+}
+
+div.products-container div.right p{
+    font-size: xx-large;
+    color: red;
+}
+
+div.products-container div.right div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.products-container div.right div h3{
+    color:#fff;
+	text-align: center;
+	cursor: pointer;
+    background-color: #091216;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+    margin: 5px;
+}
+
+div.products-container div.right div h3:hover{
+	background:#fff;
+	box-shadow:0px 2px 10px 5px #97B1BF;
+	color:#000;
+}
+
+div.products-container div.right div h3:active{
+    transform: scale(10%);
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px){
+
+    div.products-container{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+        padding-top: 25px;
+    }
+
+    div.products-container div.right p,
+    div.products-container div.right div{
+        display: none;
+    }
+
+    Hide scrollbar for Chrome, Safari and Opera
+    div.products-container::-webkit-scrollbar {
+        display: none;
+    }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  div.products-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+  div.products-container div.left{
+    width: 100%;
+    height: 80%;
+    overflow: scroll;
+    padding: 10px;
+    min-height: none;
+
+  }
+
+  div.products-container div.left div.product-cards{
+    min-width: none;
+  }
+
+  div.products-container div.right{
+    width: 100%;
+    height: 20%;
+  }
+
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  div.products-container div.left::-webkit-scrollbar{
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  div.products-container div.left{
+    -ms-overflow-style: none;/* IE and Edge */
+    scrollbar-width: none;/* Firefox */
+  }
+
+  div.products-container div.left div.product-cards,
+  div.products-container div.left div.product-cards.active{
+    width: 90%;
+    height: fit-content;
+    margin: 5px;
+    box-shadow: none;
+    z-index: 10;
+  }
+
+  div.products-container div.left div.product-cards:hover,
+  div.products-container div.left div.product-cards:focus,
+  div.products-container div.left div.product-cards:active{
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(105%);
+    z-index: 10;
+  }
+
+
+
+}

@@ -1,0 +1,97 @@
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div.footer-contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gabarito', cursive;
+}
+
+footer div.contact-left,
+footer div.image{
+    width: 50%; 
+}
+
+footer div.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer div.contact-left h3{
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+footer div.image img{
+    width: 100%;
+}
+
+footer div.contact-left div.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+footer div.contact-left div.contacts div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+footer div.contact-left div.contacts div ul{
+    list-style: none;
+}
+
+footer div.contact-left ul.list-social-media{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer div.contact-left ul.list-social-media li{
+    margin: 20px;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+footer div.contact-left ul.list-social-media li:hover{
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px){
+    footer div.footer-contact-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }    
+
+    footer div.footer-contact-container div.contact-left{
+        width: 100%;
+    }
+
+    footer div.footer-contact-container div.contact-left div.contacts{
+        width: 100%;
+    }
+
+    footer div.footer-contact-container div.contact-left div.contacts div {
+        width: 50%;
+    }
+}

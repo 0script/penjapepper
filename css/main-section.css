@@ -1,0 +1,50 @@
+div.main-section{
+    padding-top: 25px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: 'Gabarito', cursive;
+}
+
+div.main-section button.section-button{
+    padding: 1rem;
+    cursor: pointer;
+    background:#fff;
+	box-shadow:0px 2px 10px 5px #97B1BF;
+	color:#000;
+    border: none;
+    font-weight: bolder;
+    position: relative;
+    right: -30%;
+    bottom: 10px;
+    transition: all 0.2s ease-in;
+}
+
+div.main-section button.section-button:hover{
+    transform: scale(110%);
+    background-color: black;
+    color: #fff;
+}
+
+div.main-section div.main-section-content{
+    width: 100%;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    transition: all 0.5s ease-out;
+}
+
+div.main-section div.main-section-content.active{
+    max-height: none;
+    height: fit-content;
+}
+
+div.main-section p{
+    width: 80%;
+}
